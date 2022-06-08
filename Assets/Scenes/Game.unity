@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 147682008}
     m_Modifications:
+    - target: {fileID: 2544103430251421505, guid: 80a50cd6cdb87a24ab8008f9e1569562, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4445646385971678745, guid: 80a50cd6cdb87a24ab8008f9e1569562, type: 3}
       propertyPath: rotationXMax
       value: -110
@@ -145,6 +149,14 @@ PrefabInstance:
     - target: {fileID: 4445646385971678745, guid: 80a50cd6cdb87a24ab8008f9e1569562, type: 3}
       propertyPath: rotationYMin
       value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4445646385971678745, guid: 80a50cd6cdb87a24ab8008f9e1569562, type: 3}
+      propertyPath: rotationXSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4445646385971678745, guid: 80a50cd6cdb87a24ab8008f9e1569562, type: 3}
+      propertyPath: rotationYSpeed
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4445646385971678748, guid: 80a50cd6cdb87a24ab8008f9e1569562, type: 3}
       propertyPath: m_RootOrder
@@ -217,10 +229,14 @@ PrefabInstance:
     - target: {fileID: 4445646385971678751, guid: 80a50cd6cdb87a24ab8008f9e1569562, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5022602860645237092, guid: df10ab9139f8e804389863e47a6cb527, type: 3}
     - target: {fileID: 4445646385971678751, guid: 80a50cd6cdb87a24ab8008f9e1569562, type: 3}
       propertyPath: m_BehaviorType
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4445646385971678751, guid: 80a50cd6cdb87a24ab8008f9e1569562, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4445646386715393511, guid: 80a50cd6cdb87a24ab8008f9e1569562, type: 3}
       propertyPath: m_LocalRotation.w
@@ -361,6 +377,10 @@ PrefabInstance:
     - target: {fileID: 7349551788581519407, guid: 80a50cd6cdb87a24ab8008f9e1569562, type: 3}
       propertyPath: m_SphereCastRadius
       value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8587781873324681449, guid: 80a50cd6cdb87a24ab8008f9e1569562, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80a50cd6cdb87a24ab8008f9e1569562, type: 3}

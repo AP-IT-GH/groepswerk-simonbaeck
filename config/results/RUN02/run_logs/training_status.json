@@ -18,15 +18,42 @@
                 "auxillary_file_paths": [
                     "results\\RUN02\\ShootTarget\\ShootTarget-500016.pt"
                 ]
+            },
+            {
+                "steps": 999949,
+                "file_path": "results\\RUN02\\ShootTarget\\ShootTarget-999949.onnx",
+                "reward": 1.0,
+                "creation_time": 1654698612.5012946,
+                "auxillary_file_paths": [
+                    "results\\RUN02\\ShootTarget\\ShootTarget-999949.pt"
+                ]
+            },
+            {
+                "steps": 1000013,
+                "file_path": "results\\RUN02\\ShootTarget\\ShootTarget-1000013.onnx",
+                "reward": 1.0,
+                "creation_time": 1654698612.6153018,
+                "auxillary_file_paths": [
+                    "results\\RUN02\\ShootTarget\\ShootTarget-1000013.pt"
+                ]
+            },
+            {
+                "steps": 1005116,
+                "file_path": "results\\RUN02\\ShootTarget\\ShootTarget-1005116.onnx",
+                "reward": null,
+                "creation_time": 1654699099.3921974,
+                "auxillary_file_paths": [
+                    "results\\RUN02\\ShootTarget\\ShootTarget-1005116.pt"
+                ]
             }
         ],
         "final_checkpoint": {
-            "steps": 500016,
+            "steps": 1005116,
             "file_path": "results\\RUN02\\ShootTarget.onnx",
-            "reward": -1.0,
-            "creation_time": 1654646438.0555904,
+            "reward": null,
+            "creation_time": 1654699099.3921974,
             "auxillary_file_paths": [
-                "results\\RUN02\\ShootTarget\\ShootTarget-500016.pt"
+                "results\\RUN02\\ShootTarget\\ShootTarget-1005116.pt"
             ]
         }
     },
