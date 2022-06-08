@@ -52,4 +52,7 @@ _config/ShootTarget.yaml_
 
 ## Omgeving
 ### Spawner
-Om onze targets te laten spawnen hebben wij een script geschreven dat een instantie van een prefab gaat verplaatsen als de Spawn() functie wordt aangeroepen. Deze zal het target van plaats veranderen binnen de bounds van het muur object. De traget zal dus alleen binnen de muur kunnen verplaats worden. 
+Om onze targets te laten spawnen hebben wij een script geschreven dat een instantie van een prefab gaat verplaatsen als de Spawn() functie wordt aangeroepen. Deze zal het target van plaats veranderen binnen de bounds van het muur object. De traget zal dus alleen binnen de muur kunnen verplaats worden.
+1. Plaats een object in de scene.
+2. Pas de grootte en locatie aan waar je het target wilt laten spawnen.
+3. Voeg een Prefab toe in de inspector, deze zal dienen als object dat spawnt.
