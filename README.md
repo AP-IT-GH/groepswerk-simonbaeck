@@ -16,9 +16,6 @@ Volgende onderdelen worden besproken
   - Spawner
   - Scorebord
   - Thema
-- One pager
-  - Versie 1
-  - Versie 2
 - Training
   - Grafieken
   - Beschrijving
@@ -101,6 +98,8 @@ Onze game bevat ook een scorebord waar de score word bijgehouden van de AI en de
 ### Thema
 Voor ons project hebben we voor een western thema gekozen, target shooting paste hier daarom ook het beste bij. Onze game bevat gebouwen, cactussen en andere thema objecten. Natuurlijk zou dit project ook gereproduceerd kunnen worden in een ander thema naar keuze.
 
-## One pager
-### Versie 1
+## Training
+### Grafieken
+Hier zijn de twee belangrijkste grafieken in ons trainingproces.
+![Grafiek 1](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
 
