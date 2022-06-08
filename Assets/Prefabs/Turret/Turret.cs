@@ -37,6 +37,12 @@ public class Turret : Agent
     private GameObject _Laser;
     private float timeLeft = 30f;
 
+    [Header("Scoreboard settings")]
+    public TextMeshProUGUI playerScore;
+    public TextMeshProUGUI aiScore;
+    private int playerScoreCounter = 0;
+    private int aiScoreCounter = 0;
+
     public override void Initialize()
     {
         _turretHead = GameObject.FindGameObjectWithTag(turretHeadTag);
@@ -141,5 +147,19 @@ public class Turret : Agent
 
         var continuousActions = actionsOut.ContinuousActions;
         continuousActions[0] = Input.GetAxis("Fire1");
+    }
+
+    public void AddAIScore()
+    {
+        aiScoreCounter++;
+        aiScore.text = aiScoreCounter + " AI";
+        aiScore.color = Color.red;
+    }
+
+    public void AddPlayerScore()
+    {
+        playerScoreCounter++;
+        playerScore.text = "PLAYER " + playerScoreCounter;
+        playerScore.color = Color.green;
     }
 }

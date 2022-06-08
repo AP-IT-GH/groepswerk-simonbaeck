@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.MLAgents;
 using UnityEngine;
 
@@ -54,6 +55,7 @@ public class DetectHit : MonoBehaviour
                 turretAgent.SetReward(1f);
                 //turretAgent.scoreText.text = turretAgent.GetCumulativeReward().ToString();
                 //turretAgent.scoreText.color = Color.red;
+                turretAgent.AddAIScore();
                 turretAgent.EndEpisode();
             }
         }
@@ -65,6 +67,7 @@ public class DetectHit : MonoBehaviour
                 Debug.Log("<b><color=green>Player HIT</color></b>");
                 //turretAgent.scoreText.text = turretAgent.GetCumulativeReward().ToString();
                 //turretAgent.scoreText.color = Color.red;
+                turretAgent.AddPlayerScore();
                 turretAgent.EndEpisode();
             }
         }
