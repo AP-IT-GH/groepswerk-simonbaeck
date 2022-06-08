@@ -60,7 +60,7 @@ behaviors:
     summary_freq: 1000
 ```
 _config/ShootTarget.yaml_
-
+  
 ## VR
 Nog aanvullen...
 
