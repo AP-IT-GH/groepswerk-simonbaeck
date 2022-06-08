@@ -1,4 +1,4 @@
-a# Target Shooter
+# Target Shooter
 ## VR experience project
 Piet Bols  
 Stef Santens  
@@ -6,7 +6,28 @@ Ali El Khattabi
 Vincent Van Oevelen  
 Simon Baeck  
 
-# Tutorial
+# Samenvatting
+Volgende onderdelen worden besproken
+- AI
+  - Unity instellingen
+  - YAML instellingen
+- VR
+- Omgeving
+  - Spawner
+  - Scorebord
+  - Thema
+- One pager
+  - Versie 1
+  - Versie 2
+- Training
+  - Grafieken
+  - Beschrijving
+  - Opvallende waarnemingen
+  - Conclusie
+  - Visie
+  - Toekomst
+
+# 
 ## AI
 ### Unity instellingen
 Voor onze AI maken wij gebruik van een turret die kan draaien om zijn as. Voor de turret zelf gebruiken wij een asset. De Turret bevat het turret script, decission Requester en Behavior Parameters. Verder heeft de laser die gelijk loopt met zijn barrel/loop een Box Collider met De Is Trigger aangevinkt en een rigidbody zonder Use Gravity maar met Is Kinematic. De turret zelf heeft bevat 4 Ray Perception Sensor 3D's. Deze zijn allen een beetje hoger/lager aan elkaar. Dit doen we omdat zodat de turret de target sneller kan vinden. Voor het script zelf zetten wij de turret altijd terug op zijn beginpositie als de episode begint. Als observations houden we de afstand bij tussen de laser en het target, de positie van het target en de tijd die nog over is voor het target zich verplaatst. Als de tijd verstreken is zal de turret een reward krijgen van -1. Als hij de target raakt krijgt hij een reward van 1. na beide wordt de episode beeindigt.
@@ -60,7 +81,7 @@ behaviors:
     summary_freq: 1000
 ```
 _config/ShootTarget.yaml_
-  
+
 ## VR
 Nog aanvullen...
 
@@ -76,3 +97,10 @@ Onze game bevat ook een scorebord waar de score word bijgehouden van de AI en de
 1. Maak twee TextMeshPro objecten aan, 1 voor AI en 1 voor speler.
 2. Kies op welke positie de tekst moet komen te staan.
 3. Voeg de twee tekst objecten toe in het turret script.
+
+### Thema
+Voor ons project hebben we voor een western thema gekozen, target shooting paste hier daarom ook het beste bij. Onze game bevat gebouwen, cactussen en andere thema objecten. Natuurlijk zou dit project ook gereproduceerd kunnen worden in een ander thema naar keuze.
+
+## One pager
+### Versie 1
+
