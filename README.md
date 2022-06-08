@@ -12,12 +12,13 @@ In dit project word gebruik gemaakt van een VR en een getraind AI component, de 
 # Methoden
 Unity versie: 2020.3.30f1  
 ML agents versie: 2.0.1
+## Objecten
+![Objecten](https://github.com/AP-IT-GH/groepswerk-simonbaeck/blob/master/Objecten.png) 
 ## AI
 ### Observaties
 - Positie van het target
-- Positie van de turret
 - Afstand tussen de laser en het target
-- 
+- Tijd die over is
 ### Unity instellingen
 Voor onze AI maken wij gebruik van een turret die kan draaien om zijn as. Voor de turret zelf gebruiken wij een asset. De Turret bevat het turret script, decission Requester en Behavior Parameters. Verder heeft de laser die gelijk loopt met zijn barrel/loop een Box Collider met De Is Trigger aangevinkt en een rigidbody zonder Use Gravity maar met Is Kinematic. De turret zelf heeft bevat 4 Ray Perception Sensor 3D's. Deze zijn allen een beetje hoger/lager aan elkaar. Dit doen we omdat zodat de turret de target sneller kan vinden. Voor het script zelf zetten wij de turret altijd terug op zijn beginpositie als de episode begint. Als observations houden we de afstand bij tussen de laser en het target, de positie van het target en de tijd die nog over is voor het target zich verplaatst. Als de tijd verstreken is zal de turret een reward krijgen van -1. Als hij de target raakt krijgt hij een reward van 1. na beide wordt de episode beeindigt.
 1. Snelheid van de draaibeweging instellen in de turret prefab.
@@ -90,6 +91,9 @@ Onze game bevat ook een scorebord waar de score word bijgehouden van de AI en de
 ### Thema
 Voor ons project hebben we voor een western thema gekozen, target shooting paste hier daarom ook het beste bij. Onze game bevat gebouwen, cactussen en andere thema objecten. Natuurlijk zou dit project ook gereproduceerd kunnen worden in een ander thema naar keuze.
 
+# One pager
+Voor dit project hebben wij een Unity project beacht dat gebruikt maakt van ML Agents en VR. Wij hebben besloten om een soort van shooter te maken waarbij de speler targets moet neerschieten die op een muur hangen. Verder hebben wij ook een turret die de opdracht heeft gekregen om dezelfde targets neer te schieten. Dit doen we door de turret te trainen via ML Agents. Het uiteindelijke einddoel is om de turret te verslaan door meer targets neer te halen dan de turret. We zijn niet afgeweken van dit idee.
+
 # Resultaten
 ##Grafieken
 ![Grafiek 1](https://github.com/AP-IT-GH/groepswerk-simonbaeck/blob/master/grafiek1.png) 
@@ -110,3 +114,13 @@ Tijdens beide runs viel het op dat de Agent tijdens het opsporen van de target v
 ## Toekomst
 Zoals hiervoor al werd besproken, meer episodes zouden ervoor zorgen dat onze Agent beter getraind zal worden. Complexere taken vergen veel training episodes, hier lopen we dan ook op het risico dat de Agent slechter word en niet meer beter word. 
 
+# Bronvermelding
+IDALGAME (Feb 27, 2020). Customized weapons - Low poly. Unity asset store. [https://assetstore.unity.com/packages/3d/props/weapons/customized-weapons-low-poly-161635#publisher](https://assetstore.unity.com/packages/3d/props/weapons/customized-weapons-low-poly-161635#publisher)
+
+Nokobot (Nov 16, 2020). Modern Guns: Handgun v1.2. Unity asset store. [https://assetstore.unity.com/packages/3d/props/guns/modern-guns-handgun-129821#description](https://assetstore.unity.com/packages/3d/props/guns/modern-guns-handgun-129821#description)
+
+PULSAR BYTES (Apr 13, 2017). WorldSkies Free Skybox Pack. Unity asset store. [https://assetstore.unity.com/packages/2d/textures-materials/sky/worldskies-free-skybox-pack-86517#description](https://assetstore.unity.com/packages/2d/textures-materials/sky/worldskies-free-skybox-pack-86517#description)
+
+23 Space Robots and Counting... (Jan 9, 2018). Free Low Poly Dessert Pack. Unity asset store. [https://assetstore.unity.com/packages/3d/environments/free-low-poly-desert-pack-106709#description](https://assetstore.unity.com/packages/3d/environments/free-low-poly-desert-pack-106709#description)
+
+Lukas Bobor (Sep 24, 2016). Desert Buildings. Unity asset store. [https://assetstore.unity.com/packages/3d/environments/urban/desert-buildings-71445#description](https://assetstore.unity.com/packages/3d/environments/urban/desert-buildings-71445#description)
