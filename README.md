@@ -102,7 +102,7 @@ Registreer het indrukken van de trigger door de TryGetFeatureValue methode. Deze
 De timer variabele begrenst de tijd tussen twee afgevuurde kogels. Na elk schot wordt de timer op nul gezet en telt de verstreken tijd op. Eens de grens overschreden wordt, kan je opnieuw schieten.
 SendHapticImpulse zorgt ervoor dat bij elk schot een controller vibreert. Instellingen: 1 = rechter controller, 0,70f = amplitude (0f tot 1f), 0,25f = duratie (0f tot 1f). 
 Voor het vergroten van het realisme wordt een knalgeluid afgespeeld bij elk schot.
-Het is belangrijk om de kogel te laten vertrekken vanuit een punt dat realistisch lijkt, namelijk de loop van het wapen. De prefab van het vuurwapen bestaat uit meerdere onderdelen. Initialiseer het meest geschikte onderdeel in de code en laat de kogel hieruit vertrekken (“barrelEnd.transform.position”)  
+Het is belangrijk om de kogel te laten vertrekken vanuit een punt dat realistisch lijkt, namelijk de loop van het wapen. De prefab van het vuurwapen bestaat uit meerdere onderdelen. Initialiseer in het script het meest geschikte onderdeel (of creëer er zelf een Empty Object voor met de beste locatie) en laat de kogel hieruit vertrekken (“barrelEnd.transform.position”)  
 ![Code snippet](https://github.com/AP-IT-GH/groepswerk-simonbaeck/blob/master/VR6.png)
 
 ## Omgeving
