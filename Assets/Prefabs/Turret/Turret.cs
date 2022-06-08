@@ -27,6 +27,12 @@ public class Turret : Agent
     public float rotationXMax = 0f;
     public float rotationXMin = 0f;
 
+    [Header("Scoreboard settings")]
+    public TextMeshPro playerScoreText;
+    public TextMeshPro aiScoreText;
+    private int playerScore = 0;
+    private int aiScore = 0;
+
     private GameObject _turretHead;
     private GameObject _turretFoot;
     private GameObject _Spawner;
@@ -141,5 +147,19 @@ public class Turret : Agent
 
         var continuousActions = actionsOut.ContinuousActions;
         continuousActions[0] = Input.GetAxis("Fire1");
+    }
+
+    public void AddAIScore()
+    {
+        aiScore++;
+        aiScoreText.text = aiScore + " AI";
+        aiScoreText.color = Color.red;
+    }
+
+    public void AddPlayerScore()
+    {
+        playerScore++;
+        playerScoreText.text = "PLAYER " + playerScore;
+        playerScoreText.color = Color.green;
     }
 }
