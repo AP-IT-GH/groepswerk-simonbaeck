@@ -155,8 +155,14 @@ MonoBehaviour:
   prefab: {fileID: 4469530037051578634, guid: c52a4455a193e684797e2c3a60ffb798, type: 3}
   muur: {fileID: 618973706}
   spawnPoint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
   min: 1
   max: 3.5
+=======
+  max: 3.5
+  min: 1
+  radius: 1.25
+>>>>>>> Stashed changes
 --- !u!4 &18360395
 Transform:
   m_ObjectHideFlags: 0
@@ -377,7 +383,11 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 455736000}
+<<<<<<< Updated upstream
   m_Enabled: 0
+=======
+  m_Enabled: 1
+>>>>>>> Stashed changes
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -927,7 +937,11 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+<<<<<<< Updated upstream
       - m_Target: {fileID: 816007836}
+=======
+      - m_Target: {fileID: 816007831}
+>>>>>>> Stashed changes
         m_TargetAssemblyTypeName: LineRendererSettings, Assembly-CSharp
         m_MethodName: ColorChangeOnClick
         m_Mode: 1
@@ -989,8 +1003,13 @@ GameObject:
   - component: {fileID: 816007834}
   - component: {fileID: 816007833}
   - component: {fileID: 816007832}
+<<<<<<< Updated upstream
   - component: {fileID: 816007830}
   - component: {fileID: 816007836}
+=======
+  - component: {fileID: 816007831}
+  - component: {fileID: 816007830}
+>>>>>>> Stashed changes
   - component: {fileID: 816007829}
   m_Layer: 0
   m_Name: Capsule
@@ -1115,6 +1134,28 @@ MonoBehaviour:
   m_TrackingType: 0
   m_UpdateType: 0
   m_UseRelativeTransform: 0
+<<<<<<< Updated upstream
+=======
+--- !u!114 &816007831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816007828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 273448cf01da80a44b8b5a32f4ab25c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rend: {fileID: 816007829}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32
+  panel: {fileID: 713727077}
+  img: {fileID: 0}
+  btn: {fileID: 0}
+>>>>>>> Stashed changes
 --- !u!136 &816007832
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1192,6 +1233,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
 --- !u!114 &816007836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1211,6 +1253,8 @@ MonoBehaviour:
   panel: {fileID: 713727077}
   img: {fileID: 0}
   btn: {fileID: 0}
+=======
+>>>>>>> Stashed changes
 --- !u!1 &852195604
 GameObject:
   m_ObjectHideFlags: 0
@@ -1308,7 +1352,11 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+<<<<<<< Updated upstream
       - m_Target: {fileID: 816007836}
+=======
+      - m_Target: {fileID: 816007831}
+>>>>>>> Stashed changes
         m_TargetAssemblyTypeName: LineRendererSettings, Assembly-CSharp
         m_MethodName: ColorChangeOnClick
         m_Mode: 1
@@ -2156,7 +2204,11 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+<<<<<<< Updated upstream
       - m_Target: {fileID: 816007836}
+=======
+      - m_Target: {fileID: 816007831}
+>>>>>>> Stashed changes
         m_TargetAssemblyTypeName: LineRendererSettings, Assembly-CSharp
         m_MethodName: ColorChangeOnClick
         m_Mode: 1
@@ -2886,6 +2938,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86b515ebbe056ab409be4d1fa69755cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
+=======
+  projectile: {fileID: 1441121823220625620, guid: e8c9f444c6b7b8a4f8d2e0964cd588fb, type: 3}
+  shootRate: 0.5
+  ShootForce: 25
+  audioSource: {fileID: 1895018493}
+>>>>>>> Stashed changes
 --- !u!82 &1895018493
 AudioSource:
   m_ObjectHideFlags: 0
