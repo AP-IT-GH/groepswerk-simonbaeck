@@ -79,30 +79,30 @@ Voeg de volgende packages toe aan het Unity project:
 •	XR plugin manager
 •	Oculus XR plugin
 
-Ga naar project settings -> XR plugin management -> selecteer de provider
+Ga naar project settings -> XR plugin management -> selecteer de provider  
 ![Provider keuze](https://github.com/AP-IT-GH/groepswerk-simonbaeck/blob/master/VR2.png)
 
-Voeg een XR origin base(action based) toe in de Hierarchy. Als dit correct verlopen is, krijg je een action manager en een origin.
+Voeg een XR origin base(action based) toe in de Hierarchy. Als dit correct verlopen is, krijg je een action manager en een origin.  
 ![XR toevoegen in hiërarchie](https://github.com/AP-IT-GH/groepswerk-simonbaeck/blob/master/VR1.png)
 
 ### RightHand Controller
-Zorg ervoor dat de tracking en input wordt geregistreerd.
+Zorg ervoor dat de tracking en input wordt geregistreerd.  
 ![tracking & input](https://github.com/AP-IT-GH/groepswerk-simonbaeck/blob/master/VR3.png)
 
-Stel de rechtse controller als zijn eigen Model Parent in.
+Stel de rechtse controller als zijn eigen Model Parent in.  
 ![Model Parent](https://github.com/AP-IT-GH/groepswerk-simonbaeck/blob/master/VR5.png)
 
 Koppel een nieuw C# script aan de RightHand Controller.
 Haal een lijst met de verbonden apparaten op.
 De volgorde van devices is \[vr-headset, linkerhand, rechterhand\].
-Doe dit in de Update methode zodat de rechter controller nog verbonden kan worden na het starten van het programma.
+Doe dit in de Update methode zodat de rechter controller nog verbonden kan worden na het starten van het programma.  
 ![InputDevices](https://github.com/AP-IT-GH/groepswerk-simonbaeck/blob/master/VR4.png)
 
 Registreer het indrukken van de trigger door de TryGetFeatureValue methode. Deze geeft een float terug met grenzen 0 en 1.
 De timer variabele begrenst de tijd tussen twee afgevuurde kogels. Na elk schot wordt de timer op nul gezet en telt de verstreken tijd op. Eens de grens overschreden wordt, kan je opnieuw schieten.
 SendHapticImpulse zorgt ervoor dat bij elk schot een controller vibreert. Instellingen: 1 = rechter controller, 0,70f = amplitude (0f tot 1f), 0,25f = duratie (0f tot 1f). 
 Voor het vergroten van het realisme wordt een knalgeluid afgespeeld bij elk schot.
-Het is belangrijk om de kogel te laten vertrekken vanuit een punt dat realistisch lijkt, namelijk de loop van het wapen. De prefab van het vuurwapen bestaat uit meerdere onderdelen. Initialiseer het meest geschikte onderdeel in de code en laat de kogel hieruit vertrekken (“barrelEnd.transform.position”)
+Het is belangrijk om de kogel te laten vertrekken vanuit een punt dat realistisch lijkt, namelijk de loop van het wapen. De prefab van het vuurwapen bestaat uit meerdere onderdelen. Initialiseer het meest geschikte onderdeel in de code en laat de kogel hieruit vertrekken (“barrelEnd.transform.position”)  
 ![Code snippet](https://github.com/AP-IT-GH/groepswerk-simonbaeck/blob/master/VR6.png)
 
 ## Omgeving
@@ -119,7 +119,9 @@ Onze game bevat ook een scorebord waar de score word bijgehouden van de AI en de
 3. Voeg de twee tekst objecten toe in het turret script.
 
 ### Thema
-Voor ons project hebben we voor een western thema gekozen, target shooting paste hier daarom ook het beste bij. Onze game bevat gebouwen, cactussen en andere thema objecten. Natuurlijk zou dit project ook gereproduceerd kunnen worden in een ander thema naar keuze.
+Voor ons project hebben we voor een western thema gekozen, target shooting paste hier daarom ook het beste bij. Onze game bevat gebouwen, cactussen en andere thema objecten. Natuurlijk zou dit project ook gereproduceerd kunnen worden in een ander thema naar keuze.  
+  
+Wij hebben gebruik gemaakt van een Terrain om de bergen en sahara te creëren. Daarnaast hebben wij verschillende assets uit de asset store gebruikt om de wat bomen en huisjes op het terrain te plaatsen.
 
 # One pager
 Voor dit project hebben wij een Unity project beacht dat gebruikt maakt van ML Agents en VR. Wij hebben besloten om een soort van shooter te maken waarbij de speler targets moet neerschieten die op een muur hangen. Verder hebben wij ook een turret die de opdracht heeft gekregen om dezelfde targets neer te schieten. Dit doen we door de turret te trainen via ML Agents. Het uiteindelijke einddoel is om de turret te verslaan door meer targets neer te halen dan de turret. We zijn niet afgeweken van dit idee.
