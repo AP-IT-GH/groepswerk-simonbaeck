@@ -91,6 +91,8 @@ Onze game bevat ook een scorebord waar de score word bijgehouden van de AI en de
 ### Thema
 Voor ons project hebben we voor een western thema gekozen, target shooting paste hier daarom ook het beste bij. Onze game bevat gebouwen, cactussen en andere thema objecten. Natuurlijk zou dit project ook gereproduceerd kunnen worden in een ander thema naar keuze.
 
+Wij hebben gebruik gemaakt van een Terrain om de bergen en sahara te creëren. Daarnaast hebben wij verschillende assets uit de asset store gebruikt om de wat bomen en huisjes op het terrain te plaatsen.
+
 # One pager
 Voor dit project hebben wij een Unity project beacht dat gebruikt maakt van ML Agents en VR. Wij hebben besloten om een soort van shooter te maken waarbij de speler targets moet neerschieten die op een muur hangen. Verder hebben wij ook een turret die de opdracht heeft gekregen om dezelfde targets neer te schieten. Dit doen we door de turret te trainen via ML Agents. Het uiteindelijke einddoel is om de turret te verslaan door meer targets neer te halen dan de turret. We zijn niet afgeweken van dit idee.
 
