@@ -9,7 +9,20 @@ Simon Baeck
 # Tutorial
 ## AI
 ### Unity instellingen
-VOor onze AI maken wij gebruik van een turret die kan draaien om zijn as. Voor de turret zelf gebruiken wij een asset. De Turret bevat het turret script, decission Requester en Behavior Parameters. Verder heeft de laser die gelijk loopt met zijn barrel/loop een Box Collider met De Is Trigger aangevinkt en een rigidbody zonder Use Gravity maar met Is Kinematic. De turret zelf heeft bevat 4 Ray Perception Sensor 3D's. Deze zijn allen een beetje hoger/lager aan elkaar. Dit doen we omdat zodat de turret de target sneller kan vinden. Voor het script zelf zetten wij de turret altijd terug op zijn beginpositie als de episode begint. Als observations houden we de afstand bij tussen de laser en het target, de positie van het target en de tijd die nog over is voor het target zich verplaatst. Als de tijd verstreken is zal de turret een reward krijgen van -1. Als hij de target raakt krijgt hij een reward van 1. na beide wordt de episode beeindigt.
+Voor onze AI maken wij gebruik van een turret die kan draaien om zijn as. Voor de turret zelf gebruiken wij een asset. De Turret bevat het turret script, decission Requester en Behavior Parameters. Verder heeft de laser die gelijk loopt met zijn barrel/loop een Box Collider met De Is Trigger aangevinkt en een rigidbody zonder Use Gravity maar met Is Kinematic. De turret zelf heeft bevat 4 Ray Perception Sensor 3D's. Deze zijn allen een beetje hoger/lager aan elkaar. Dit doen we omdat zodat de turret de target sneller kan vinden. Voor het script zelf zetten wij de turret altijd terug op zijn beginpositie als de episode begint. Als observations houden we de afstand bij tussen de laser en het target, de positie van het target en de tijd die nog over is voor het target zich verplaatst. Als de tijd verstreken is zal de turret een reward krijgen van -1. Als hij de target raakt krijgt hij een reward van 1. na beide wordt de episode beeindigt.
+1. Snelheid van de draaibeweging instellen in de turret prefab.
+2. Text selecteren waar de score moet weergeven worden.
+3. Behaviour parameters worden als volgt ingesteld:  
+- Behaviour name: ShootTarget
+- Vector observation
+  - Space size: 6
+  - Stacked vectors: 1
+- Actions
+  - Continous actions: 2
+  - Discrete branches: 2
+    - Branch 0 size: 4
+    - Branch 1 size: 4
+- Model: .onnx bestand dat gegenereert word na het trainen van de AI
 ### YAML instellingen
 Onze agent zal getraind kunnen worden via ML-Agents met volgende configuratie. 
 1. Maak een map **config** aan in de root van het project.
