@@ -56,3 +56,9 @@ Om onze targets te laten spawnen hebben wij een script geschreven dat een instan
 1. Plaats een object in de scene.
 2. Pas de grootte en locatie aan waar je het target wilt laten spawnen.
 3. Voeg een Prefab toe in de inspector, deze zal dienen als object dat spawnt.
+
+### Scorebord
+Onze game bevat ook een scorebord waar de score word bijgehouden van de AI en de speler zelf.
+1. Maak twee TextMeshPro objecten aan, 1 voor AI en 1 voor speler.
+2. Kies op welke positie de tekst moet komen te staan.
+3. Voeg de twee tekst objecten toe in het turret script.
